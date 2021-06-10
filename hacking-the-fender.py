@@ -19,8 +19,7 @@ with open('boss_message.json', 'w') as boss_message:
     'message': 'Mission Success'
   }
   json.dump(boss_message_dict, boss_message)
-  print("Boss Message: " , boss_message_dict)
-
+  
 with open('new_passwords.csv', 'w') as new_passwords_obj:
   slash_null_sig = '''
   _  _     ___   __  ____             
