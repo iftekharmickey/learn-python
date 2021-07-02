@@ -45,11 +45,15 @@ kids_items = {
 kids_menu = Menu("kids", kids_items, 1100, 2100)
 
 print(brunch_menu)
+
 print(early_bird_menu)
+
 print(dinner_menu)
+
 print(kids_menu)
 
 print(brunch_menu.calculate_bill(['pancakes', 'home fries', 'coffee']))
+
 print(early_bird_menu.calculate_bill(['salumeria plate', 'mushroom ravioli (vegan)']))
 
 class Franchise:
@@ -69,12 +73,17 @@ class Franchise:
     return available_menus
     
 menus = [brunch_menu, early_bird_menu, dinner_menu, kids_menu]
+
 flagship_store = Franchise("1232 West End Road", menus)
+
 new_installment = Franchise("12 East Mulberry Street", menus)
 
 print(flagship_store)
+
 print(new_installment)
+
 print(flagship_store.available_menus(1200))
+
 print(flagship_store.available_menus(1700))
 
 class Business:
@@ -95,5 +104,4 @@ arepas_items = {
 arepas_menu = Menu("Take a' Arepa", arepas_items, 1000, 2000)
 arepas_place = Franchise("189 Fitzgerald Avenue", [arepas_menu])
 arepa_business = Business("Take a' Arepa", [arepas_place])
-
 print(arepa_business.franchises[0].menus[0])
