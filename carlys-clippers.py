@@ -24,5 +24,5 @@ print("Total Revenue: ", total_revenue)
 average_daily_revenue = total_revenue / 7
 print("Average Daily Revenue: ", average_daily_revenue)
 
-cuts_under_30 = [hairstyles[i] for i in range(len(new_prices)-1) if new_prices[i] < 30]
+cuts_under_30 = [hairstyles[i] for i in range(len(hairstyles)) if new_prices[i] < 30]
 print("Cuts Under 30: ", cuts_under_30)
